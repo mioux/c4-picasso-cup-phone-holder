@@ -1,4 +1,4 @@
-d_cup_holder = 70;
+d_cup_holder = 60;
 h_cup_holder = 25;
 
 x_support = 5;

@@ -84,7 +84,7 @@ union()
                 union()
                 {
                     translate([55, 3, -21]) cube([13, 8, 65]);
-                    translate([37, 3.5, 11]) cube([12, 7, 20]);
+                    translate([37, 3.5, 7]) cube([12, 7, 30]);
                     translate([43, 6.9, -21]) cylinder(d=4.2, h=65, $fn=100);
                     translate([43, 4.8, -21]) cube([20, 4.2, 65]);
                 }
