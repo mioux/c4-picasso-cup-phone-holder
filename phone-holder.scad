@@ -95,13 +95,12 @@ union()
                 cube([66, 10, 400]);
             }
 
-            translate([43,7.62,6])
+            translate([43,7.62,8.5])
                 rotate([-90, 0, 0])
                     cylinder(d=5,h=100,$fn=100);
 
-
-            translate([40.5, 7.62, 7])
-                cube([5,7,5]);
+            translate([40.5, 7.62, 5])
+                cube([5, 15, 3.5]);
         }
     }
 }
