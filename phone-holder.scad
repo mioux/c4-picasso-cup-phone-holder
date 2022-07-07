@@ -6,24 +6,24 @@ union()
     {
         union()
         {
-            translate([d_cup_holder / -2, (y_support - 0.5) / -2, 0])
+            translate([d_up_cup_holder / -2, (y_support - 0.5) / -2, 0])
             {
-                cube([x_support, y_support - 0.5, h_cup_holder + 1]);
+                cube([x_support, y_support - 0.5, h_cup_holder]);
             }
 
-            translate([d_cup_holder / 2 - x_support, (y_support - 0.5) / -2, 0])
+            translate([d_up_cup_holder / 2 - x_support, (y_support - 0.5) / -2, 0])
             {
-                cube([x_support, y_support - 0.5, h_cup_holder + 1]);
+                cube([x_support, y_support - 0.5, h_cup_holder]);
             }
         }
 
-        cylinder(h=h_cup_holder + 1, d=d_cup_holder, $fn=500);
+        cylinder(h=h_cup_holder, d1=d_down_cup_holder, d2=d_up_cup_holder, $fn=500);
 
     }
 
     // From https://github.com/mioux/pixel_6-stand
     // I don't want to rewrite all :D
-    translate([-43, (y_support - 0.5) / -2, 20])
+    translate([-43, (y_support - 0.5) / -2, h_cup_holder - 6])
     {
         difference()
         {
